@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+html{
+    font-family: sans-serif;
+}
+
+/**************************** Common Style ****************************/
 .container{
     width: 70%;
     margin: 0 auto;
@@ -25,14 +30,39 @@
     width: 100%;
 }
 
+.relative{
+    position: relative;
+}
+
+.white{
+    color: white;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+/**************************** Header ****************************/
 header{
     background-color: #ff6900;
+    background-image: url(./img/boolean-logo.png);
+    background-size: 7%;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 a{
     text-decoration: none;
-    color: white;
+}
+
+.h-links{
     padding: 4px;
+}
+
+.icons{
+    padding: 2px;
+    color: white;
 }
 
 .h-flex{
@@ -43,29 +73,158 @@ a{
 
 .h-item1{
     line-height: 70px;
-    font-weight: 600;
     min-width: 25%;
 }
 
 .h-item2{
     width: 50%;
-    background-image: url(./img/boolean-logo.png);
-    background-size: 25%;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
+.font14{
+    font-size: 14px;
+}
+
+/**************************** Main ****************************/
 .flex1{
     display: flex;
     justify-content: space-between;
-    
 }
 
-.logo{
-    width: 200px;
-}
 
 .boxed{
     width: 32%;
-    max-height: 540px;
+    max-height: 616px;
+}
+
+.card{
+    position: relative;
+    display: inline-block;
+    
+}
+
+.card .alt{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 97;
+    width: 100%;
+}
+
+.card:hover .alt {
+    display: inline;
+}
+
+.modello{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.prezzo{
+    color: #ff153d;
+}
+
+.sconto{
+    color: black;
+    text-decoration: line-through;
+}
+
+.heart{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    text-align: center;
+    line-height: 50px;
+    font-size: 38px;
+    z-index: 99;
+}
+
+.heart:hover{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    text-align: center;
+    line-height: 50px;
+    font-size: 38px;
+    color: red;
+}
+
+.percentuale{
+    background-color: #ff0000;
+    height: 25px;
+    width: 50px;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    z-index: 98;
+}
+
+.sostenibile{
+    background-color: #008000;
+    height: 25px;
+    width: auto;
+    padding: 0 6px;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    left: 55px;
+    bottom: 3rem;
+    z-index: 98;
+}
+
+.sostenibile2{
+    background-color: #008000;
+    height: 25px;
+    width: auto;
+    padding: 0 6px;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    z-index: 98;
+}
+
+/**************************** Footer ****************************/
+footer{
+    background-color: #1a1a1a;
+    height: 100px;
+}
+
+.f-flex{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.f-item{
+    margin-top: 1rem;
+}
+
+.f-title{
+    padding: 0 1rem 1rem 1rem;
+    font-size: 18px;
+}
+.f-links{
+    padding: 0 1rem 1rem 1rem;
+}
+
+.f-icons{
+    padding: 3px;
+    text-align: center;
+}
+
+.social{
+    margin-bottom: 1rem;
+    margin-left: 4px;
 }
