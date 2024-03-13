@@ -1,230 +1,236 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-html{
-    font-family: sans-serif;
+html {
+  font-family: sans-serif;
 }
 
 /**************************** Common Style ****************************/
-.container{
-    width: 70%;
-    margin: 0 auto;
+.container {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .align-right {
-    text-align: right;
+  text-align: right;
 }
 
-.margin-top{
-    margin-top: 3rem;
+.margin-top {
+  margin-top: 3rem;
 }
 
-.margin-bot{
-    margin-bottom: 3rem;
+.margin-top-hi {
+  margin-top: 8rem;
 }
 
-.img-size{
-    width: 100%;
+.margin-bot {
+  margin-bottom: 3rem;
 }
 
-.relative{
-    position: relative;
+.img-size {
+  width: 100%;
 }
 
-.white{
-    color: white;
+.relative {
+  position: relative;
 }
 
-.bold{
-    font-weight: 600;
+.white {
+  color: white;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 /**************************** Header ****************************/
-header{
-    background-color: #ff6900;
-    background-image: url(./img/boolean-logo.png);
-    background-size: 7%;
-    background-position: center;
-    background-repeat: no-repeat;
-
+header {
+  background-color: #ff6900;
+  background-image: url(./img/boolean-logo.png);
+  background-size: 7%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 1900px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.h-links{
-    padding: 4px;
+.h-links {
+  padding: 4px;
 }
 
-.icons{
-    padding: 2px;
-    color: white;
+.icons {
+  padding: 2px;
+  color: white;
 }
 
-.h-flex{
-    display: flex;
-    justify-content: space-between;
-    min-height: 70px;
+.h-flex {
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
 }
 
-.h-item1{
-    line-height: 70px;
-    min-width: 25%;
+.h-item1 {
+  line-height: 70px;
+  min-width: 25%;
 }
 
-.h-item2{
-    width: 50%;
+.h-item2 {
+  width: 50%;
 }
 
-.font14{
-    font-size: 14px;
+.font14 {
+  font-size: 14px;
 }
 
 /**************************** Main ****************************/
-.flex1{
-    display: flex;
-    justify-content: space-between;
+.flex1 {
+  display: flex;
+  justify-content: space-between;
 }
 
-
-.boxed{
-    width: 32%;
-    max-height: 616px;
+.boxed {
+  width: 32%;
+  max-height: 616px;
 }
 
-.card{
-    position: relative;
-    display: inline-block;
-    
+.card {
+  position: relative;
+  display: inline-block;
 }
 
-.card .alt{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 97;
-    width: 100%;
+.card .alt {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 97;
+  width: 100%;
 }
 
 .card:hover .alt {
-    display: inline;
+  display: inline;
 }
 
-.modello{
-    font-size: 18px;
-    text-transform: uppercase;
+.modello {
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
-.prezzo{
-    color: #ff153d;
+.prezzo {
+  color: #ff153d;
 }
 
-.sconto{
-    color: black;
-    text-decoration: line-through;
+.sconto {
+  color: black;
+  text-decoration: line-through;
 }
 
-.heart{
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    position: absolute;
-    right: 0;
-    top: 1rem;
-    text-align: center;
-    line-height: 50px;
-    font-size: 38px;
-    z-index: 99;
+.heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  text-align: center;
+  line-height: 50px;
+  font-size: 38px;
+  z-index: 99;
 }
 
-.heart:hover{
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    position: absolute;
-    right: 0;
-    top: 1rem;
-    text-align: center;
-    line-height: 50px;
-    font-size: 38px;
-    color: red;
+.heart:hover {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  text-align: center;
+  line-height: 50px;
+  font-size: 38px;
+  color: red;
 }
 
-.percentuale{
-    background-color: #ff0000;
-    height: 25px;
-    width: 50px;
-    text-align: center;
-    line-height: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
-    z-index: 98;
+.percentuale {
+  background-color: #ff0000;
+  height: 25px;
+  width: 50px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  z-index: 98;
 }
 
-.sostenibile{
-    background-color: #008000;
-    height: 25px;
-    width: auto;
-    padding: 0 6px;
-    text-align: center;
-    line-height: 25px;
-    position: absolute;
-    left: 55px;
-    bottom: 3rem;
-    z-index: 98;
+.sostenibile {
+  background-color: #008000;
+  height: 25px;
+  width: auto;
+  padding: 0 6px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  left: 55px;
+  bottom: 3rem;
+  z-index: 98;
 }
 
-.sostenibile2{
-    background-color: #008000;
-    height: 25px;
-    width: auto;
-    padding: 0 6px;
-    text-align: center;
-    line-height: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
-    z-index: 98;
+.sostenibile2 {
+  background-color: #008000;
+  height: 25px;
+  width: auto;
+  padding: 0 6px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  z-index: 98;
 }
 
 /**************************** Footer ****************************/
-footer{
-    background-color: #1a1a1a;
-    height: 100px;
+footer {
+  background-color: #1a1a1a;
+  height: 100px;
 }
 
-.f-flex{
-    display: flex;
-    justify-content: space-between;
-    min-height: 100px;
-    align-content: center;
-    flex-wrap: wrap;
+.f-flex {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
-.f-item{
-    margin-top: 1rem;
+.f-item {
+  margin-top: 1rem;
 }
 
-.f-title{
-    padding: 0 1rem 1rem 1rem;
-    font-size: 18px;
+.f-title {
+  padding: 0 1rem 1rem 1rem;
+  font-size: 18px;
 }
-.f-links{
-    padding: 0 1rem 1rem 1rem;
-}
-
-.f-icons{
-    padding: 3px;
-    text-align: center;
+.f-links {
+  padding: 0 1rem 1rem 1rem;
 }
 
-.social{
-    margin-bottom: 1rem;
-    margin-left: 4px;
+.f-icons {
+  padding: 3px;
+  text-align: center;
+}
+
+.social {
+  margin-bottom: 1rem;
+  margin-left: 4px;
 }
